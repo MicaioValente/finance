@@ -4,10 +4,12 @@ import (
 	"bytes"
 	"crypto/sha512"
 	"database/sql"
+
+	"net/http"
+
 	"github.com/gin-gonic/gin"
 	db "github.com/micaiovalente/finance/db/sqlc"
 	"golang.org/x/crypto/bcrypt"
-	"net/http"
 )
 
 type createUserRequest struct {
