@@ -4,8 +4,8 @@ INSERT INTO users (
     password,
     email
 ) VALUES (
- $1, $2, $3
-) RETURNING *;
+             $1, $2, $3
+         ) RETURNING *;
 
 -- name: GetUser :one
 SELECT * FROM users
